@@ -14,7 +14,12 @@ const Navigation = ({
       <Nav>
         <NavItem>
           <NavLink to="/" className="nav-link">
-            Home
+            <Button>Home</Button>
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink to="/apartmentindex" className="nav-link">
+            <Button>View Listings</Button>
           </NavLink>
         </NavItem>
         {logged_in && (
@@ -25,30 +30,30 @@ const Navigation = ({
           </NavItem>
         )}
         {logged_in && (
-          <NavItem>
-            <NavLink to="/apartmentshow/:id" className="nav-link">
-              <Button>My Listings</Button>
-            </NavLink>
-          </NavItem>
-        )}
-        {logged_in && (
-          <NavItem>
-            <NavLink to="/apartmentindex" className="nav-link">
-              <Button>View Listings</Button>
-            </NavLink>
-          </NavItem>
+          <>
+            <NavItem>
+              <NavLink to="/apartmentshow/:id" className="nav-link">
+                <Button>My Listings</Button>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to="/apartmentcreate" className="nav-link">
+                <Button>Create Listing</Button>
+              </NavLink>
+            </NavItem>
+          </>
         )}
         {!logged_in && (
           <NavItem>
             <a href={sign_in_route} className="nav-link">
-              Sign In
+              <Button>Sign In</Button>
             </a>
           </NavItem>
         )}
         {!logged_in && (
           <NavItem>
             <a href={new_user_route} className="nav-link">
-              Sign Up
+              <Button>Sign Up</Button>
             </a>
           </NavItem>
         )}
