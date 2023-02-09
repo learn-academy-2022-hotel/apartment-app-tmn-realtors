@@ -1,5 +1,5 @@
 import React from "react"
-import { Nav, NavItem } from "reactstrap"
+import { Button, Nav, NavItem } from "reactstrap"
 import { NavLink } from "react-router-dom"
 
 const Navigation = ({
@@ -20,8 +20,22 @@ const Navigation = ({
         {logged_in && (
           <NavItem>
             <a href={sign_out_route} className="nav-link">
-              Sign Out
+              <Button>Sign Out</Button>
             </a>
+          </NavItem>
+        )}
+        {logged_in && (
+          <NavItem>
+            <NavLink to="/apartmentshow/:id" className="nav-link">
+              <Button>My Listings</Button>
+            </NavLink>
+          </NavItem>
+        )}
+        {logged_in && (
+          <NavItem>
+            <NavLink to="/apartmentindex" className="nav-link">
+              <Button>View Listings</Button>
+            </NavLink>
           </NavItem>
         )}
         {!logged_in && (
