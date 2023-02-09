@@ -26,9 +26,9 @@ describe("<Home />", () => {
         <Home />
       </BrowserRouter>
     )
-    screen.logTestingPlaygroundURL()
+    
     const paragraph =screen.getByText(
-      /get the flexibility you need\. rent the home of dreams, and move immediately\. all possible with tmn realtors!/i
+      /get the flexibility you need\. rent the home of dreams, and move immediately\. all possible with tbmn realtors!/i
       )
       expect(paragraph).toBeInTheDocument()
     })
