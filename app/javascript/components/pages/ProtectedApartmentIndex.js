@@ -2,7 +2,7 @@ import React from "react"
 import { Card, CardBody, CardTitle, CardSubtitle, Button, CardText } from "reactstrap"
 
 const ProtectedApartmentIndex = ({ apartments, current_user }) => {
-    const userApartments = apartments?.filter((apartment) => {
+    const userApartments = apartments?.find((apartment) => {
         return apartment.user_id === current_user.id
     })
   return (
