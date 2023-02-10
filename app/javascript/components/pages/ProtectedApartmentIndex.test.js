@@ -20,7 +20,6 @@ describe("<ProtectedApartmentIndex />", () => {
             <ProtectedApartmentIndex />
         </BrowserRouter>,
     )
-    screen.logTestingPlaygroundURL()
     const listingsHeading = screen.getByRole('heading', {
         name: /my listings:/i
       })
