@@ -30,7 +30,7 @@ describe("<Navigation />", () => {
         <Navigation />
       </BrowserRouter>
     )
-    screen.logTestingPlaygroundURL()
+
     const listings = screen.getByRole('button', {
       name: /view listings/i
     })

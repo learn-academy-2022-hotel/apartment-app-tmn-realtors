@@ -32,7 +32,7 @@ const Navigation = ({
         {logged_in && (
           <>
             <NavItem>
-              <NavLink to="/apartmentshow/:id" className="nav-link">
+              <NavLink to="/mylistings" className="nav-link">
                 <Button>My Listings</Button>
               </NavLink>
             </NavItem>
