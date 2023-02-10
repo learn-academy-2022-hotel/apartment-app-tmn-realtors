@@ -2,11 +2,13 @@ import React from "react"
 import { Card, CardBody, CardTitle, CardSubtitle, Button, CardText } from "reactstrap"
 
 const ProtectedApartmentIndex = ({ apartments, current_user }) => {
-    const userApartments = apartments.filter(())
+    const userApartments = apartments?.filter((apartment) => {
+        return apartment.user_id === current_user.id
+    })
   return (
     <main className="apartment-index-cards">
       <h1>My Listings:</h1>
-      {apartments?.map((apartment, index) =>{
+      {userApartments?.map((apartment, index) =>{
         return (
           <Card
             style={{
