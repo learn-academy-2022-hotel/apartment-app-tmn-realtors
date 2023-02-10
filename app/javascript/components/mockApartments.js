@@ -1,5 +1,6 @@
 const mockApartments = [
   {
+    id: 1,
     street: "4 Privet Drive",
     city: "Little Whinging",
     state: "Surrey",
@@ -13,6 +14,7 @@ const mockApartments = [
       "https://c8.alamy.com/comp/B0RJGE/small-bungalow-home-with-pathway-in-addlestone-surrey-uk-B0RJGE.jpg"
   },
   {
+    id: 2,
     street: "15 Yemen Road",
     city: "Yemen",
     state: "Yemen",
@@ -26,6 +28,7 @@ const mockApartments = [
       "https://i.pinimg.com/736x/4f/c1/ce/4fc1ce196ea1412f670d477a026ba2c6--saudi-arabia-drawing-reference.jpg"
   },
   {
+    id: 3,
     street: "742 Evengreen Terrace",
     city: "Springfield",
     state: "Any State",

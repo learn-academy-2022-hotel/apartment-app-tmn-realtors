@@ -9,7 +9,7 @@ describe("<ApartmentIndex />", () => {
     render(
       <BrowserRouter>
       <ApartmentIndex />
-      </BrowserRouter>, 
+      </BrowserRouter>,
       div
     )
   })

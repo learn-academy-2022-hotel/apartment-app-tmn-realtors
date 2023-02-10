@@ -42,7 +42,6 @@ describe("<Navigation />", () => {
         <Navigation />
       </BrowserRouter>
     )
-    screen.logTestingPlaygroundURL()
     const sign_in = screen.getByRole('button', {
       name: /sign in/i
     })
@@ -54,7 +53,6 @@ describe("<Navigation />", () => {
         <Navigation />
       </BrowserRouter>
     )
-    screen.logTestingPlaygroundURL()
     const sign_up = screen.getByRole('button', {
       name: /sign up/i
     })
